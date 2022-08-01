@@ -1,11 +1,11 @@
-import { $content, createHTMLElement } from "./index";
+import { $content, createHtmlElement } from "./index";
 
 function render() {
     const navItems = ["home", "menu", "about"];
     const $ul = document.createElement("ul");
 
     navItems.forEach((item) =>
-        $ul.appendChild(createHTMLElement("li", null, null, item))
+        $ul.appendChild(createHtmlElement("li", null, null, item))
     );
 
     const $nav = document.createElement("nav");
